@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.1 (Python 3.7.3 on win32)" generated="20190401 09:54:40.520" rpa="false">
+<suite id="s1" name="Salarium-Logoutlogin" source="C:\Users\Entrego\Desktop\Tools\Workspace\Eclipse\RobotTest\Robot-Test\salarium-logoutlogin.robot">
+<test id="s1-t1" name="MyFirstTest">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Hello World...</arg>
+</arguments>
+<msg timestamp="20190401 09:54:44.569" level="INFO">Hello World...</msg>
+<status status="PASS" starttime="20190401 09:54:44.568" endtime="20190401 09:54:44.570"></status>
+</kw>
+<status status="PASS" starttime="20190401 09:54:44.567" endtime="20190401 09:54:44.570" critical="yes"></status>
+</test>
+<test id="s1-t2" name="FirstSeleniumTest">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>https://app.salarium.com/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20190401 09:54:44.575" level="INFO">Opening browser 'chrome' to base url 'https://app.salarium.com/'.</msg>
+<status status="PASS" starttime="20190401 09:54:44.575" endtime="20190401 09:55:08.460"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20190401 09:55:08.461" endtime="20190401 09:55:08.467"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>name=email</arg>
+<arg>johnecis.madrid@entrego.com.ph</arg>
+</arguments>
+<msg timestamp="20190401 09:55:08.469" level="INFO">Typing text 'johnecis.madrid@entrego.com.ph' into text field 'name=email'.</msg>
+<status status="PASS" starttime="20190401 09:55:08.468" endtime="20190401 09:55:09.249"></status>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into text field identified by ``locator``.</doc>
+<arguments>
+<arg>name=password</arg>
+<arg>JohnecisMadrid1993</arg>
+</arguments>
+<msg timestamp="20190401 09:55:09.251" level="INFO">Typing password into text field 'name=password'.</msg>
+<status status="PASS" starttime="20190401 09:55:09.250" endtime="20190401 09:55:09.690"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>class=btn-form-custom</arg>
+</arguments>
+<msg timestamp="20190401 09:55:09.693" level="INFO">Clicking button 'class=btn-form-custom'.</msg>
+<status status="PASS" starttime="20190401 09:55:09.692" endtime="20190401 09:55:09.994"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20190401 09:55:14.999" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20190401 09:55:09.995" endtime="20190401 09:55:14.999"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>id=time_btn</arg>
+</arguments>
+<msg timestamp="20190401 09:55:15.003" level="INFO">Clicking button 'id=time_btn'.</msg>
+<status status="PASS" starttime="20190401 09:55:15.002" endtime="20190401 09:55:16.575"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20190401 09:55:16.576" endtime="20190401 09:55:20.406"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Test Completed</arg>
+</arguments>
+<msg timestamp="20190401 09:55:20.409" level="INFO">Test Completed</msg>
+<status status="PASS" starttime="20190401 09:55:20.408" endtime="20190401 09:55:20.409"></status>
+</kw>
+<status status="PASS" starttime="20190401 09:54:44.573" endtime="20190401 09:55:20.411" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20190401 09:54:40.525" endtime="20190401 09:55:20.436"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0">Critical Tests</stat>
+<stat pass="2" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" id="s1" name="Salarium-Logoutlogin">Salarium-Logoutlogin</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
