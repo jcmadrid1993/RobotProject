@@ -1,0 +1,42 @@
+*** Settings ***
+Suite Teardown    Run Keyword And Ignore Error      Close All Browsers  
+Library    Collections   
+Library    Selenium2Library    
+Library    ExcelLibrary 
+Library    ExcelRobot
+Library    RequestsLibrary                     
+*** Variable ***
+${path}          Test Data/ExcelTest.xlsx           #path of your file
+
+*** Test Cases ***
+ExcelTest
+
+    Open Excel File
+    Create list store value and Loop to response status 
+
+*** Keyword ***
+Open Excel File
+    Open Excel Document    ${path}    doc_id=doc_id
+    
+Create list store value and Loop to response status
+     @{ListExcel}=        Create List
+    :FOR    ${i}    IN RANGE    2    4                      #depend on ExcelFile. 
+    \   ${data}    Read Excel Cell    ${i}    1    
+    \   Log    ${data}              
+    \   Exit For Loop If    '${data}'=='${EMPTY}'
+    \   Append To List    ${ListExcel}    ${data}               #add all of links to list          
+    Log     ${ListExcel}
+
+    Open Excel Document    	${path}    	doc_id=docid               
+    ${linkitems_length}    Get Length    ${ListExcel} 
+    :FOR   ${INDEX}    IN RANGE      ${linkitems_length}  
+    \    Log    ${INDEX}          
+    \    Create Session     TestExisting     ${ListExcel[${INDEX}]}                                                                                                        
+    \    ${response}        Get Request    TestExisting    /                      #response status          
+    \    ${curIndex}=    Evaluate    2+${INDEX}                                   #get currently position 
+    \    Run Keyword If    '${response.status_code}'!='200'     Write Excel Cell    ${curIndex}    2   FAIL      #check condition
+    \    Run Keyword If    '${response.status_code}'=='200'     Write Excel Cell    ${curIndex}    2   PASS      #check condition
+
+    Save Excel Document    filename=Test Data/ExcelTest2.xlsx        #save file with diffirent name.    
+    Close All Excel Documents    
+
