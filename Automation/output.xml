@@ -1,0 +1,855 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.7.6 on win32)" generated="20200827 15:39:17.873" rpa="false">
+<suite id="s1" name="Automation" source="C:\Users\ENTREGO\eclipse-workspace\Automation">
+<suite id="s1-s1" name="Test Cases" source="C:\Users\ENTREGO\eclipse-workspace\Automation\Test Cases">
+<suite id="s1-s1-s1" name="Print Waybill" source="C:\Users\ENTREGO\eclipse-workspace\Automation\Test Cases\print_waybill.robot">
+<kw name="Login to HMS" library="login" type="setup">
+<arguments>
+<arg>johnecis.madrid@entrego.com.ph</arg>
+<arg>@EntregoMadrid0804</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20200827 15:39:18.728" level="INFO">Opening browser 'chrome' to base url 'https://hms.entrego.org/'.</msg>
+<status status="PASS" starttime="20200827 15:39:18.728" endtime="20200827 15:39:25.816"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20200827 15:39:25.816" endtime="20200827 15:39:27.933"></status>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that the current page title equals ``title``.</doc>
+<arguments>
+<arg>LMS</arg>
+</arguments>
+<msg timestamp="20200827 15:39:27.941" level="INFO">Page title is 'LMS'.</msg>
+<status status="PASS" starttime="20200827 15:39:27.934" endtime="20200827 15:39:27.942"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>LMS</arg>
+</arguments>
+<status status="PASS" starttime="20200827 15:39:27.942" endtime="20200827 15:39:27.958"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Title</arg>
+</arguments>
+<msg timestamp="20200827 15:39:27.959" level="INFO">Title</msg>
+<status status="PASS" starttime="20200827 15:39:27.958" endtime="20200827 15:39:27.959"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>10</arg>
+</arguments>
+<status status="PASS" starttime="20200827 15:39:27.959" endtime="20200827 15:39:27.961"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://button[contains(@class,'my-4 px-4')]</arg>
+</arguments>
+<msg timestamp="20200827 15:39:27.962" level="INFO">Clicking element 'xpath://button[contains(@class,'my-4 px-4')]'.</msg>
+<status status="PASS" starttime="20200827 15:39:27.962" endtime="20200827 15:39:28.095"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20200827 15:39:30.098" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200827 15:39:28.096" endtime="20200827 15:39:30.098"></status>
+</kw>
+<kw name="Select Window" library="SeleniumLibrary">
+<doc>DEPRECATED in SeleniumLibrary 4.0. , use `Switch Window` instead.</doc>
+<arguments>
+<arg>NEW</arg>
+</arguments>
+<status status="PASS" starttime="20200827 15:39:30.099" endtime="20200827 15:39:30.109"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20200827 15:39:32.111" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200827 15:39:30.109" endtime="20200827 15:39:32.111"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id:identifierId</arg>
+<arg>${email}</arg>
+</arguments>
+<msg timestamp="20200827 15:39:32.112" level="INFO">Typing text 'johnecis.madrid@entrego.com.ph' into text field 'id:identifierId'.</msg>
+<status status="PASS" starttime="20200827 15:39:32.111" endtime="20200827 15:39:34.346"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20200827 15:39:36.348" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200827 15:39:34.346" endtime="20200827 15:39:36.349"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>class:VfPpkd-RLmnJb</arg>
+</arguments>
+<msg timestamp="20200827 15:39:36.350" level="INFO">Clicking element 'class:VfPpkd-RLmnJb'.</msg>
+<status status="PASS" starttime="20200827 15:39:36.349" endtime="20200827 15:39:36.465"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20200827 15:39:38.467" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200827 15:39:36.466" endtime="20200827 15:39:38.468"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>dom:document.querySelectorAll(".whsOnd, .zHQkBf")[0];</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20200827 15:39:38.472" level="INFO">Typing text '@EntregoMadrid0804' into text field 'dom:document.querySelectorAll(".whsOnd, .zHQkBf")[0];'.</msg>
+<status status="PASS" starttime="20200827 15:39:38.469" endtime="20200827 15:39:38.631"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20200827 15:39:41.633" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200827 15:39:38.631" endtime="20200827 15:39:41.633"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>class:VfPpkd-RLmnJb</arg>
+</arguments>
+<msg timestamp="20200827 15:39:41.635" level="INFO">Clicking element 'class:VfPpkd-RLmnJb'.</msg>
+<status status="PASS" starttime="20200827 15:39:41.634" endtime="20200827 15:39:41.707"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10</arg>
+</arguments>
+<msg timestamp="20200827 15:39:51.709" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20200827 15:39:41.707" endtime="20200827 15:39:51.710"></status>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<doc>Switches to browser window matching ``locator``.</doc>
+<arguments>
+<arg>MAIN</arg>
+</arguments>
+<status status="PASS" starttime="20200827 15:39:51.711" endtime="20200827 15:39:53.748"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20200827 15:39:58.750" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200827 15:39:53.748" endtime="20200827 15:39:58.751"></status>
+</kw>
+<status status="PASS" starttime="20200827 15:39:18.728" endtime="20200827 15:39:58.752"></status>
+</kw>
+<test id="s1-s1-s1-t1" name="Print Waybill from Excel File">
+<kw name="Open Excel Document" library="ExcelLibrary">
+<doc>Opens xlsx document file.</doc>
+<arguments>
+<arg>${excelFile}</arg>
+<arg>document</arg>
+</arguments>
+<status status="PASS" starttime="20200827 15:39:58.758" endtime="20200827 15:39:58.781"></status>
+</kw>
+<kw name="Read Excel Column" library="ExcelLibrary">
+<doc>Returns content of a column from the current sheet of the document.</doc>
+<arguments>
+<arg>col_num=1</arg>
+</arguments>
+<assign>
+<var>${trackingNumberList}</var>
+</assign>
+<msg timestamp="20200827 15:39:58.784" level="INFO">${trackingNumberList} = ['Tracking Number', '0371-A6ANC4EEDGJF', '0371-WQURG7KUH5WC', '0038-FAU1KHXUYZ7Z']</msg>
+<status status="PASS" starttime="20200827 15:39:58.782" endtime="20200827 15:39:58.784"></status>
+</kw>
+<kw name="Remove Values From List" library="Collections">
+<doc>Removes all occurrences of given ``values`` from ``list``.</doc>
+<arguments>
+<arg>${trackingNumberList}</arg>
+<arg>Tracking Number</arg>
+</arguments>
+<status status="PASS" starttime="20200827 15:39:58.785" endtime="20200827 15:39:58.785"></status>
+</kw>
+<kw name="${trackingNumber} IN [ @{trackingNumberList} ]" type="for">
+<kw name="${trackingNumber} = 0371-A6ANC4EEDGJF" type="foritem">
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<arguments>
+<arg>Search Tracking Number</arg>
+<arg>${trackingNumber}</arg>
+</arguments>
+<assign>
+<var>${status}</var>
+</assign>
+<kw name="Search Tracking Number" library="tracking_number">
+<arguments>
+<arg>${trackingNumber}</arg>
+</arguments>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>Orders</arg>
+</arguments>
+<status status="PASS" starttime="20200827 15:39:58.788" endtime="20200827 15:39:58.804"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>Search</arg>
+</arguments>
+<status status="PASS" starttime="20200827 15:39:58.805" endtime="20200827 15:39:58.817"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://div[contains(@class,'search-control control')]//input[1]</arg>
+<arg>${trackingNumber}</arg>
+</arguments>
+<msg timestamp="20200827 15:39:58.818" level="INFO">Typing text '0371-A6ANC4EEDGJF' into text field 'xpath://div[contains(@class,'search-control control')]//input[1]'.</msg>
+<status status="PASS" starttime="20200827 15:39:58.817" endtime="20200827 15:39:59.000"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20200827 15:40:02.001" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200827 15:39:59.000" endtime="20200827 15:40:02.002"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>dom:document.querySelectorAll('input')[2];</arg>
+<arg>RETURN</arg>
+</arguments>
+<msg timestamp="20200827 15:40:02.006" level="INFO">Sending key(s) ('RETURN',) to dom:document.querySelectorAll('input')[2]; element.</msg>
+<msg timestamp="20200827 15:40:02.317" level="INFO">Pressing special key RETURN to element.</msg>
+<msg timestamp="20200827 15:40:02.318" level="INFO">Releasing special key RETURN.</msg>
+<status status="PASS" starttime="20200827 15:40:02.003" endtime="20200827 15:40:02.383"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20200827 15:40:07.384" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200827 15:40:02.384" endtime="20200827 15:40:07.385"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://html/body/div/div/div[2]/div/div[3]/div[2]/table/tbody/tr/td[1]/span</arg>
+</arguments>
+<msg timestamp="20200827 15:40:07.388" level="INFO">Clicking element 'xpath://html/body/div/div/div[2]/div/div[3]/div[2]/table/tbody/tr/td[1]/span'.</msg>
+<status status="PASS" starttime="20200827 15:40:07.386" endtime="20200827 15:40:07.515"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20200827 15:40:10.517" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200827 15:40:07.515" endtime="20200827 15:40:10.518"></status>
+</kw>
+<status status="PASS" starttime="20200827 15:39:58.787" endtime="20200827 15:40:10.519"></status>
+</kw>
+<msg timestamp="20200827 15:40:10.520" level="INFO">${status} = True</msg>
+<status status="PASS" starttime="20200827 15:39:58.787" endtime="20200827 15:40:10.520"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${status} == True</arg>
+<arg>Run Keywords</arg>
+<arg>Print Waybill</arg>
+<arg>AND</arg>
+<arg>Write Excel Cell</arg>
+<arg>${rowCounter}</arg>
+<arg>${2}</arg>
+<arg>Pass</arg>
+<arg>ELSE</arg>
+<arg>Write Excel Cell</arg>
+<arg>${rowCounter}</arg>
+<arg>${2}</arg>
+<arg>Fail</arg>
+</arguments>
+<kw name="Run Keywords" library="BuiltIn">
+<doc>Executes all the given keywords in a sequence.</doc>
+<arguments>
+<arg>Print Waybill</arg>
+<arg>AND</arg>
+<arg>Write Excel Cell</arg>
+<arg>${rowCounter}</arg>
+<arg>${2}</arg>
+<arg>Pass</arg>
+</arguments>
+<kw name="Print Waybill" library="tracking_number">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://html/body/div[2]/div[3]/div/div[1]/div[2]/div/div/div[2]/button</arg>
+</arguments>
+<msg timestamp="20200827 15:40:10.528" level="INFO">Clicking element 'xpath://html/body/div[2]/div[3]/div/div[1]/div[2]/div/div/div[2]/button'.</msg>
+<status status="PASS" starttime="20200827 15:40:10.527" endtime="20200827 15:40:10.694"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20200827 15:40:12.696" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200827 15:40:10.694" endtime="20200827 15:40:12.697"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://html/body/div[3]/div[3]/div/div[3]/button[2]</arg>
+</arguments>
+<msg timestamp="20200827 15:40:12.700" level="INFO">Clicking element 'xpath://html/body/div[3]/div[3]/div/div[3]/button[2]'.</msg>
+<status status="PASS" starttime="20200827 15:40:12.698" endtime="20200827 15:40:12.837"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20200827 15:40:15.838" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200827 15:40:12.837" endtime="20200827 15:40:15.839"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>None</arg>
+<arg>ESC</arg>
+</arguments>
+<msg timestamp="20200827 15:40:15.843" level="INFO">Sending key(s) ('ESC',) to page.</msg>
+<msg timestamp="20200827 15:40:15.843" level="INFO">Pressing special key ESCAPE to browser.</msg>
+<msg timestamp="20200827 15:40:15.844" level="INFO">Releasing special key ESCAPE.</msg>
+<status status="PASS" starttime="20200827 15:40:15.840" endtime="20200827 15:40:15.924"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>Orders</arg>
+</arguments>
+<status status="PASS" starttime="20200827 15:40:15.925" endtime="20200827 15:40:15.938"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20200827 15:40:18.940" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200827 15:40:15.938" endtime="20200827 15:40:18.941"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>Search</arg>
+</arguments>
+<status status="PASS" starttime="20200827 15:40:18.942" endtime="20200827 15:40:18.972"></status>
+</kw>
+<status status="PASS" starttime="20200827 15:40:10.526" endtime="20200827 15:40:18.973"></status>
+</kw>
+<kw name="Write Excel Cell" library="ExcelLibrary">
+<doc>Writes value to the cell.</doc>
+<arguments>
+<arg>${rowCounter}</arg>
+<arg>${2}</arg>
+<arg>Pass</arg>
+</arguments>
+<status status="PASS" starttime="20200827 15:40:18.975" endtime="20200827 15:40:18.976"></status>
+</kw>
+<status status="PASS" starttime="20200827 15:40:10.524" endtime="20200827 15:40:18.977"></status>
+</kw>
+<status status="PASS" starttime="20200827 15:40:10.522" endtime="20200827 15:40:18.978"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${rowCounter}+1</arg>
+</arguments>
+<assign>
+<var>${rowCounter}</var>
+</assign>
+<msg timestamp="20200827 15:40:18.980" level="INFO">${rowCounter} = 3</msg>
+<status status="PASS" starttime="20200827 15:40:18.979" endtime="20200827 15:40:18.981"></status>
+</kw>
+<status status="PASS" starttime="20200827 15:39:58.786" endtime="20200827 15:40:18.981"></status>
+</kw>
+<kw name="${trackingNumber} = 0371-WQURG7KUH5WC" type="foritem">
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<arguments>
+<arg>Search Tracking Number</arg>
+<arg>${trackingNumber}</arg>
+</arguments>
+<assign>
+<var>${status}</var>
+</assign>
+<kw name="Search Tracking Number" library="tracking_number">
+<arguments>
+<arg>${trackingNumber}</arg>
+</arguments>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>Orders</arg>
+</arguments>
+<status status="PASS" starttime="20200827 15:40:18.986" endtime="20200827 15:40:19.009"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>Search</arg>
+</arguments>
+<status status="PASS" starttime="20200827 15:40:19.010" endtime="20200827 15:40:19.027"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://div[contains(@class,'search-control control')]//input[1]</arg>
+<arg>${trackingNumber}</arg>
+</arguments>
+<msg timestamp="20200827 15:40:19.028" level="INFO">Typing text '0371-WQURG7KUH5WC' into text field 'xpath://div[contains(@class,'search-control control')]//input[1]'.</msg>
+<status status="PASS" starttime="20200827 15:40:19.028" endtime="20200827 15:40:19.163"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20200827 15:40:22.165" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200827 15:40:19.164" endtime="20200827 15:40:22.166"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>dom:document.querySelectorAll('input')[2];</arg>
+<arg>RETURN</arg>
+</arguments>
+<msg timestamp="20200827 15:40:22.170" level="INFO">Sending key(s) ('RETURN',) to dom:document.querySelectorAll('input')[2]; element.</msg>
+<msg timestamp="20200827 15:40:22.472" level="INFO">Pressing special key RETURN to element.</msg>
+<msg timestamp="20200827 15:40:22.473" level="INFO">Releasing special key RETURN.</msg>
+<status status="PASS" starttime="20200827 15:40:22.167" endtime="20200827 15:40:22.522"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20200827 15:40:27.525" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200827 15:40:22.522" endtime="20200827 15:40:27.526"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://html/body/div/div/div[2]/div/div[3]/div[2]/table/tbody/tr/td[1]/span</arg>
+</arguments>
+<msg timestamp="20200827 15:40:27.529" level="INFO">Clicking element 'xpath://html/body/div/div/div[2]/div/div[3]/div[2]/table/tbody/tr/td[1]/span'.</msg>
+<status status="PASS" starttime="20200827 15:40:27.527" endtime="20200827 15:40:27.664"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20200827 15:40:30.666" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200827 15:40:27.665" endtime="20200827 15:40:30.667"></status>
+</kw>
+<status status="PASS" starttime="20200827 15:40:18.984" endtime="20200827 15:40:30.668"></status>
+</kw>
+<msg timestamp="20200827 15:40:30.669" level="INFO">${status} = True</msg>
+<status status="PASS" starttime="20200827 15:40:18.983" endtime="20200827 15:40:30.669"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${status} == True</arg>
+<arg>Run Keywords</arg>
+<arg>Print Waybill</arg>
+<arg>AND</arg>
+<arg>Write Excel Cell</arg>
+<arg>${rowCounter}</arg>
+<arg>${2}</arg>
+<arg>Pass</arg>
+<arg>ELSE</arg>
+<arg>Write Excel Cell</arg>
+<arg>${rowCounter}</arg>
+<arg>${2}</arg>
+<arg>Fail</arg>
+</arguments>
+<kw name="Run Keywords" library="BuiltIn">
+<doc>Executes all the given keywords in a sequence.</doc>
+<arguments>
+<arg>Print Waybill</arg>
+<arg>AND</arg>
+<arg>Write Excel Cell</arg>
+<arg>${rowCounter}</arg>
+<arg>${2}</arg>
+<arg>Pass</arg>
+</arguments>
+<kw name="Print Waybill" library="tracking_number">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://html/body/div[2]/div[3]/div/div[1]/div[2]/div/div/div[2]/button</arg>
+</arguments>
+<msg timestamp="20200827 15:40:30.678" level="INFO">Clicking element 'xpath://html/body/div[2]/div[3]/div/div[1]/div[2]/div/div/div[2]/button'.</msg>
+<status status="PASS" starttime="20200827 15:40:30.677" endtime="20200827 15:40:30.815"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20200827 15:40:32.817" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200827 15:40:30.815" endtime="20200827 15:40:32.818"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://html/body/div[3]/div[3]/div/div[3]/button[2]</arg>
+</arguments>
+<msg timestamp="20200827 15:40:32.821" level="INFO">Clicking element 'xpath://html/body/div[3]/div[3]/div/div[3]/button[2]'.</msg>
+<status status="PASS" starttime="20200827 15:40:32.819" endtime="20200827 15:40:32.915"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20200827 15:40:35.917" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200827 15:40:32.916" endtime="20200827 15:40:35.917"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>None</arg>
+<arg>ESC</arg>
+</arguments>
+<msg timestamp="20200827 15:40:35.918" level="INFO">Sending key(s) ('ESC',) to page.</msg>
+<msg timestamp="20200827 15:40:35.919" level="INFO">Pressing special key ESCAPE to browser.</msg>
+<msg timestamp="20200827 15:40:35.919" level="INFO">Releasing special key ESCAPE.</msg>
+<status status="PASS" starttime="20200827 15:40:35.917" endtime="20200827 15:40:35.965"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>Orders</arg>
+</arguments>
+<status status="PASS" starttime="20200827 15:40:35.966" endtime="20200827 15:40:35.982"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20200827 15:40:38.984" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200827 15:40:35.982" endtime="20200827 15:40:38.985"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>Search</arg>
+</arguments>
+<status status="PASS" starttime="20200827 15:40:38.986" endtime="20200827 15:40:39.024"></status>
+</kw>
+<status status="PASS" starttime="20200827 15:40:30.676" endtime="20200827 15:40:39.025"></status>
+</kw>
+<kw name="Write Excel Cell" library="ExcelLibrary">
+<doc>Writes value to the cell.</doc>
+<arguments>
+<arg>${rowCounter}</arg>
+<arg>${2}</arg>
+<arg>Pass</arg>
+</arguments>
+<status status="PASS" starttime="20200827 15:40:39.025" endtime="20200827 15:40:39.026"></status>
+</kw>
+<status status="PASS" starttime="20200827 15:40:30.673" endtime="20200827 15:40:39.027"></status>
+</kw>
+<status status="PASS" starttime="20200827 15:40:30.671" endtime="20200827 15:40:39.027"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${rowCounter}+1</arg>
+</arguments>
+<assign>
+<var>${rowCounter}</var>
+</assign>
+<msg timestamp="20200827 15:40:39.029" level="INFO">${rowCounter} = 4</msg>
+<status status="PASS" starttime="20200827 15:40:39.028" endtime="20200827 15:40:39.029"></status>
+</kw>
+<status status="PASS" starttime="20200827 15:40:18.982" endtime="20200827 15:40:39.029"></status>
+</kw>
+<kw name="${trackingNumber} = 0038-FAU1KHXUYZ7Z" type="foritem">
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<arguments>
+<arg>Search Tracking Number</arg>
+<arg>${trackingNumber}</arg>
+</arguments>
+<assign>
+<var>${status}</var>
+</assign>
+<kw name="Search Tracking Number" library="tracking_number">
+<arguments>
+<arg>${trackingNumber}</arg>
+</arguments>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>Orders</arg>
+</arguments>
+<status status="PASS" starttime="20200827 15:40:39.032" endtime="20200827 15:40:39.049"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>Search</arg>
+</arguments>
+<status status="PASS" starttime="20200827 15:40:39.051" endtime="20200827 15:40:39.059"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://div[contains(@class,'search-control control')]//input[1]</arg>
+<arg>${trackingNumber}</arg>
+</arguments>
+<msg timestamp="20200827 15:40:39.059" level="INFO">Typing text '0038-FAU1KHXUYZ7Z' into text field 'xpath://div[contains(@class,'search-control control')]//input[1]'.</msg>
+<status status="PASS" starttime="20200827 15:40:39.059" endtime="20200827 15:40:39.198"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20200827 15:40:42.201" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200827 15:40:39.198" endtime="20200827 15:40:42.201"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>dom:document.querySelectorAll('input')[2];</arg>
+<arg>RETURN</arg>
+</arguments>
+<msg timestamp="20200827 15:40:42.205" level="INFO">Sending key(s) ('RETURN',) to dom:document.querySelectorAll('input')[2]; element.</msg>
+<msg timestamp="20200827 15:40:42.518" level="INFO">Pressing special key RETURN to element.</msg>
+<msg timestamp="20200827 15:40:42.519" level="INFO">Releasing special key RETURN.</msg>
+<status status="PASS" starttime="20200827 15:40:42.202" endtime="20200827 15:40:42.565"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20200827 15:40:47.567" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200827 15:40:42.565" endtime="20200827 15:40:47.568"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://html/body/div/div/div[2]/div/div[3]/div[2]/table/tbody/tr/td[1]/span</arg>
+</arguments>
+<msg timestamp="20200827 15:40:47.571" level="INFO">Clicking element 'xpath://html/body/div/div/div[2]/div/div[3]/div[2]/table/tbody/tr/td[1]/span'.</msg>
+<status status="PASS" starttime="20200827 15:40:47.569" endtime="20200827 15:40:47.698"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20200827 15:40:50.700" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200827 15:40:47.698" endtime="20200827 15:40:50.701"></status>
+</kw>
+<status status="PASS" starttime="20200827 15:40:39.031" endtime="20200827 15:40:50.702"></status>
+</kw>
+<msg timestamp="20200827 15:40:50.703" level="INFO">${status} = True</msg>
+<status status="PASS" starttime="20200827 15:40:39.030" endtime="20200827 15:40:50.703"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${status} == True</arg>
+<arg>Run Keywords</arg>
+<arg>Print Waybill</arg>
+<arg>AND</arg>
+<arg>Write Excel Cell</arg>
+<arg>${rowCounter}</arg>
+<arg>${2}</arg>
+<arg>Pass</arg>
+<arg>ELSE</arg>
+<arg>Write Excel Cell</arg>
+<arg>${rowCounter}</arg>
+<arg>${2}</arg>
+<arg>Fail</arg>
+</arguments>
+<kw name="Run Keywords" library="BuiltIn">
+<doc>Executes all the given keywords in a sequence.</doc>
+<arguments>
+<arg>Print Waybill</arg>
+<arg>AND</arg>
+<arg>Write Excel Cell</arg>
+<arg>${rowCounter}</arg>
+<arg>${2}</arg>
+<arg>Pass</arg>
+</arguments>
+<kw name="Print Waybill" library="tracking_number">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://html/body/div[2]/div[3]/div/div[1]/div[2]/div/div/div[2]/button</arg>
+</arguments>
+<msg timestamp="20200827 15:40:50.711" level="INFO">Clicking element 'xpath://html/body/div[2]/div[3]/div/div[1]/div[2]/div/div/div[2]/button'.</msg>
+<status status="PASS" starttime="20200827 15:40:50.710" endtime="20200827 15:40:50.804"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20200827 15:40:52.807" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200827 15:40:50.805" endtime="20200827 15:40:52.808"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://html/body/div[3]/div[3]/div/div[3]/button[2]</arg>
+</arguments>
+<msg timestamp="20200827 15:40:52.811" level="INFO">Clicking element 'xpath://html/body/div[3]/div[3]/div/div[3]/button[2]'.</msg>
+<status status="PASS" starttime="20200827 15:40:52.809" endtime="20200827 15:40:52.915"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20200827 15:40:55.916" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200827 15:40:52.915" endtime="20200827 15:40:55.917"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>None</arg>
+<arg>ESC</arg>
+</arguments>
+<msg timestamp="20200827 15:40:55.922" level="INFO">Sending key(s) ('ESC',) to page.</msg>
+<msg timestamp="20200827 15:40:55.922" level="INFO">Pressing special key ESCAPE to browser.</msg>
+<msg timestamp="20200827 15:40:55.923" level="INFO">Releasing special key ESCAPE.</msg>
+<status status="PASS" starttime="20200827 15:40:55.919" endtime="20200827 15:40:55.989"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>Orders</arg>
+</arguments>
+<status status="PASS" starttime="20200827 15:40:55.990" endtime="20200827 15:40:56.004"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20200827 15:40:59.007" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200827 15:40:56.005" endtime="20200827 15:40:59.007"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>Search</arg>
+</arguments>
+<status status="PASS" starttime="20200827 15:40:59.008" endtime="20200827 15:40:59.053"></status>
+</kw>
+<status status="PASS" starttime="20200827 15:40:50.708" endtime="20200827 15:40:59.054"></status>
+</kw>
+<kw name="Write Excel Cell" library="ExcelLibrary">
+<doc>Writes value to the cell.</doc>
+<arguments>
+<arg>${rowCounter}</arg>
+<arg>${2}</arg>
+<arg>Pass</arg>
+</arguments>
+<status status="PASS" starttime="20200827 15:40:59.055" endtime="20200827 15:40:59.056"></status>
+</kw>
+<status status="PASS" starttime="20200827 15:40:50.707" endtime="20200827 15:40:59.056"></status>
+</kw>
+<status status="PASS" starttime="20200827 15:40:50.704" endtime="20200827 15:40:59.056"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${rowCounter}+1</arg>
+</arguments>
+<assign>
+<var>${rowCounter}</var>
+</assign>
+<msg timestamp="20200827 15:40:59.058" level="INFO">${rowCounter} = 5</msg>
+<status status="PASS" starttime="20200827 15:40:59.057" endtime="20200827 15:40:59.058"></status>
+</kw>
+<status status="PASS" starttime="20200827 15:40:39.030" endtime="20200827 15:40:59.058"></status>
+</kw>
+<status status="PASS" starttime="20200827 15:39:58.786" endtime="20200827 15:40:59.059"></status>
+</kw>
+<kw name="Save Excel Document" library="ExcelLibrary">
+<doc>Saves the current document to disk.</doc>
+<arguments>
+<arg>${excelFile}</arg>
+</arguments>
+<status status="PASS" starttime="20200827 15:40:59.059" endtime="20200827 15:40:59.074"></status>
+</kw>
+<kw name="Close Current Excel Document" library="ExcelLibrary">
+<doc>Closes current document.</doc>
+<status status="PASS" starttime="20200827 15:40:59.074" endtime="20200827 15:40:59.075"></status>
+</kw>
+<status status="PASS" starttime="20200827 15:39:58.753" endtime="20200827 15:40:59.076" critical="yes"></status>
+</test>
+<kw name="Close All Browsers" library="SeleniumLibrary" type="teardown">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20200827 15:40:59.077" endtime="20200827 15:41:01.289"></status>
+</kw>
+<status status="PASS" starttime="20200827 15:39:17.926" endtime="20200827 15:41:01.290"></status>
+</suite>
+<status status="PASS" starttime="20200827 15:39:17.924" endtime="20200827 15:41:01.297"></status>
+</suite>
+<status status="PASS" starttime="20200827 15:39:17.903" endtime="20200827 15:41:01.302"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Automation">Automation</stat>
+<stat pass="1" fail="0" id="s1-s1" name="Test Cases">Automation.Test Cases</stat>
+<stat pass="1" fail="0" id="s1-s1-s1" name="Print Waybill">Automation.Test Cases.Print Waybill</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

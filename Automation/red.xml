@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<projectConfiguration>
+    <configVersion>2</configVersion>
+    <relativeTo>WORKSPACE</relativeTo>
+    <referencedLibrary type="PYTHON" name="Selenium2Library" path="C:/Users/ENTREGO/AppData/Local/Programs/Python/Python37/Lib/site-packages/Selenium2Library/__init__.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="DataDriver" path="C:/Users/ENTREGO/AppData/Local/Programs/Python/Python37/Lib/site-packages/DataDriver/__init__.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="SeleniumLibrary" path="C:/Users/ENTREGO/AppData/Local/Programs/Python/Python37/Lib/site-packages/SeleniumLibrary/__init__.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="ExcelLibrary" path="C:/Users/ENTREGO/AppData/Local/Programs/Python/Python37/Lib/site-packages/ExcelLibrary.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="ReactLibrary" path="C:/Users/ENTREGO/AppData/Local/Programs/Python/Python37/Lib/site-packages/ReactLibrary/__init__.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="ScreenCapLibrary" path="C:/Users/ENTREGO/AppData/Local/Programs/Python/Python37/Lib/site-packages/ScreenCapLibrary/__init__.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="requests" path="C:/Users/ENTREGO/AppData/Local/Programs/Python/Python37/Lib/site-packages/requests/__init__.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="RequestsLibrary" path="C:/Users/ENTREGO/AppData/Local/Programs/Python/Python37/Lib/site-packages/RequestsLibrary/__init__.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="ExcelRobot" path="C:/Users/ENTREGO/AppData/Local/Programs/Python/Python37/Lib/site-packages/ExcelRobot/__init__.py" dynamic="false"/>
+    <pythonpath/>
+    <classpath/>
+    <excludedForValidation/>
+    <isValidatedFileSizeCheckingEnabled>true</isValidatedFileSizeCheckingEnabled>
+    <validatedFileMaxSize>1024</validatedFileMaxSize>
+</projectConfiguration>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<keywordspec format="ROBOT" generated="20200724 16:06:58" name="ReactLibrary" type="library">
+<version />
+<scope>global</scope>
+<namedargs>yes</namedargs>
+<doc>ReactLibrary is a library to introspect the state of a React app.
+    </doc>
+<kw name="Wait For React">
+<arguments>
+<arg>reducer=None</arg>
+<arg>stateName=isFetching</arg>
+</arguments>
+<doc />
+<tags>
+</tags>
+</kw>
+</keywordspec>
